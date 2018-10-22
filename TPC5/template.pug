@@ -1,0 +1,42 @@
+extends layout
+
+block corpo
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-light-grey
+                h1= obra.titulo
+                h2= obra.tipo
+                h3= obra.compositor
+            .w3-container
+                    table.w3-table.w3-bordered
+                        caption 
+                            h3 Instrumentos
+                        tr 
+                            th Nome
+                            th Partitura
+                        each item in obra.instrumentos
+                            tr
+                                td= item.nome
+                                td 
+                                    if item.partitura
+                                        .w3-container
+                                            table.w3-table.w3-bordered
+                                                tr
+                                                    if item.partitura.path
+                                                        th PDF
+                                                    if item.partitura.voz
+                                                        th Voz
+                                                    if item.partitura.clave
+                                                        th Clave
+                                                tr 
+                                                    if item.partitura.path
+                                                        td
+                                                            a(href=item.partitura.path) Partitura
+                                                    if item.partitura.voz
+                                                        td= item.partitura.voz
+                                                    if item.partitura.clave
+                                                        td= item.partitura.clave                                                                
+            footer.w3-container.w3-light-grey
+                address Gerado por ObrasApp
+        address
+            a(href='http://localhost:1600/index') Voltar à página inicial
