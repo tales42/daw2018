@@ -1,0 +1,28 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-cyan
+                h3 Registo de uma nova tarefa
+            .w3-container
+                form.w3-container(action='/processaForm' method='POST')
+                    label 
+                        b Prazo de Conclusão
+                    input.w3-input.w3-border.w3-light-grey(type='date' name='dataConclusao' max='2030-12-31')
+                    label 
+                        b Descrição 
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='descricao')
+                    label 
+                        b Tipo
+                    select.w3-select(name="tipo")
+                        option(value="" disabled selected) Escolha uma opção
+                        option(value="domestica") Tarefa Doméstica
+                        option(value="academica") Tarefa Académica
+                        option(value="pessoal") Tarefa Pessoal
+                    br
+                    input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+            footer.w3-container.w3-cyan 
+                address Gerado por FormApp
+    br
+    address 
+        a(href="/") Voltar à página principal 
