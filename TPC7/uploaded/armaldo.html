@@ -1,0 +1,964 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Armaldo</title>
+	<style>
+	table, th, td {
+    	border: 1px solid black;
+	}
+	/* Style the tab */
+	.tab {
+	    overflow: hidden;
+	    border: 1px solid #ccc;
+	    background-color: #f1f1f1;
+	}
+
+	/* Style the buttons that are used to open the tab content */
+	.tab button {
+	    background-color: inherit;
+	    float: left;
+	    border: none;
+	    outline: none;
+	    cursor: pointer;
+	    padding: 14px 16px;
+	    transition: 0.3s;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	    background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+	    background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	    display: none;
+	    padding: 6px 12px;
+	    border: 1px solid #ccc;
+	    border-top: none;
+	}
+	body {background-color: white;
+		font-family: courier; padding-left: 30px;}
+		@font-face {
+  		font-family: "pokemon-font";
+  		src: url(./pokemon-font-master/css/pokemon-font.css) format("truetype");
+		}
+	h1 {
+		background-image: url(https://upload.wikimedia.org/wikipedia/en/3/39/Pokeball.PNG);
+		background-repeat: no-repeat;
+		background-size: 60px;
+		height: 80px;
+		padding-left: 100px;
+		font-size: 40px;
+		font-family: 'pokemon-font', monospace;
+		font-weight: bolder;
+	}
+	h2 {font-family: courier; font-weight: bold;}
+	h3 {font-family: courier; font-weight: bold;}	
+	p {font-family: arial;}
+	#tdNormal{
+		background-color: #a1a4a3;
+		color: white;
+		padding-left: 10px;
+	}
+	#tdGround{
+		background-color: #bda48b;
+		color: white;
+		padding-left: 10px;		
+	}
+	#tdWater{
+		background-color: #87cefa;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdSteel{
+		background-color: #92977f;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdRock{
+		background-color: #854042;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdBug{
+		background-color: #8fb41d;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdPoison{
+		background-color: #710070;
+		color:white;
+		padding-left: 10px
+	}
+	#tdFight{
+		background-color: #a37063;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdFire{
+		background-color: #f86f29;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdPsychic{
+		background-color: #d76c9b;
+		color:white;
+		padding-left: 10px;
+	}
+	#tdFlying{
+		background-color: #8d7cf3;
+		color:white;
+		padding-left: 10px;
+	}
+	</style>
+	<script>
+	function switchGen(evt, genName) {
+	    // Declare all variables
+	    var i, tabcontent, tablinks;
+
+	    // Get all elements with class="tabcontent" and hide them
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+
+	    // Get all elements with class="tablinks" and remove the class "active"
+	    tablinks = document.getElementsByClassName("tablinks");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].className = tablinks[i].className.replace(" active", "");
+	    }
+
+	    // Show the current tab, and add an "active" class to the button that opened the tab
+	    document.getElementById(genName).style.display = "block";
+	    evt.currentTarget.className += " active";
+	}
+	</script>
+</head>
+
+
+<body>
+	<div class="split right">
+    <img src="https://cdn.bulbagarden.net/upload/1/1d/348Armaldo.png" alt="Armaldo" align="right" width="200" height="200" title="Armaldo"/>
+</div>
+
+<div>
+	<a name="c0"><h1>Armaldo #348</h1></a>
+	<div style="background-color: #ffd8ab; border-radius: 5px ; border: 3px solid #ffb056">
+	<h3>The Plate Pokémon</h3>
+		<div style ="background-color: white; border-radius: 10px; width: 900px">
+			<p>Armaldo is a Fossil Pokémon with the Rock and Bug types, and it was introduced in the third generation of the Pokémon game.</p>
+			<p>Armaldo evolves from Anorith at level 40, after being revived from a Claw Fossil.</p>
+			<p>Its abilities include Battle Armor and Swift Swim (Hidden Ability).</p>
+		</div>
+	</div>
+</div>
+
+	<hr/>
+	<div style="background-color: #ffd8ab; border-radius: 5px; border: 3px solid #ffb056">
+		<h2>Index</h2>
+		<ul style="background-color: white; width: 200px; border-radius: 10px">
+			<a href="#c1"><li>Biology</li></a>
+			<a href="#c2"><li>Pokédex Entries</li></a>
+			<a href="#c3"><li>Base Stats</li></a>
+			<a href="#c5"><li>Learnset</li></a>
+			<a href="#c0"><li>Back to top</li></a>
+		</ul>
+	</div>
+	<hr/>
+<div style="background-color: #ffd8ab; border-radius: 5px; border: 3px solid #ffb056">
+	<h2><a name="c1">Biology</a></h2>
+	<p style ="background-color: white; border-radius: 5px; border: 1px solid #ffb056">
+		Armaldo is a bipedal, amphibious Pokémon, covered with thick, grayish-blue plates. There are accents of yellow, black, white, and red throughout its body. Its oblong eyes protrude from the sides of its head. A black pattern with two red, teardrop-shaped spots covered the center of its head and a yellow lower jaw. Three pairs of wing-like appendages extend from the sides of its long, thick neck. A plate of armor on its back has four short spikes and two triangular, yellow-rimmed wings extending from underneath. Its scaled chest and belly are rimmed with yellow lines as well, and there are two large yellow plates in the center of its chest. Its segmented arms extend from holes in these plates, each with a large, black claw. The legs are also segmented, with black knees. A pair of black fins tips its long tail.
+	</p>
+	<p style ="background-color: white; border-radius: 5px; border: 1px solid #ffb056">
+		In ancient times, Armaldo lived on land by the water's-edge, and dived into the ocean to hunt for prey. The large wings on its back were used for swimming, while its thick shell protected it from enemy attacks. Its strong claws can break stones and punch through a steel slab. Furthermore, they can be freely extended or retracted. It is considered to be the ancestor of some Bug-type Pokémon.
+	</p>
+	<a href="#c0">Back to top</a>
+
+</div>
+	<hr/>
+<div style="background-color: #ffd8ab; border-radius: 5px; border: 3px solid #ffb056">
+	<h2><a name="c2">Pokédex Entries</a></h2>
+<div style="background-color: #cbecb5; border-radius: 15px; border: 2px solid #9cdb73">
+	<h3>Generation III</h3>
+	<dl>
+		<dt style="background-color: #9b111e; border-radius: 5px ;color:white; width: 40px;">
+			Ruby
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #9b111e">
+			Armaldo's tough armor makes all attacks bounce off. This Pokémon's two enormous claws can be freely extended or contracted. They have the power to punch right through a steel slab.
+		</dd>
+
+		<br>
+
+		<dt style="background-color: #297bc1; border-radius: 5px ;color:white; width: 80px;">
+			Sapphire
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #297bc1">
+			Armaldo is a Pokémon species that became extinct in prehistoric times. This Pokémon is said to have walked on its hind legs, which would have been more convenient for life on land.
+		</dd>
+
+		<br>
+
+		<dt style="background-color: #4aa38f; border-radius: 5px ;color:white; width: 70px;">
+			Emerald
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #4aa38f">
+			Armaldo usually lives on land. However, when it hunts for prey, it dives beneath the ocean. It swims around using its two large wings.
+		</dd>
+		<br>
+		<dt>
+			<div style="background-color: #da2c1f; border-radius: 5px ;color:white; width: 80px;">
+				Fire Red
+			</div>
+			<div style="background-color: #49b675;border-radius: 5px ;color:white; width: 110px;">
+				& Leaf Green
+			</div> 
+		</dt> 
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #da2c1f"> 
+			Protected by a hard shell, its body is very sturdy. It skewers prey with its claws to feed.
+		</dd>
+	</dl>
+</div>
+<br>
+<div style="background-color: #cbecb5; border-radius: 15px; border: 2px solid #9cdb73">
+	<h3>Generation IV </h3>
+	<dl>
+		<dt>
+			<div style="background-color: #a4cddf; border-radius: 5px; color:white; width: 70px">
+				Diamond, 
+			</div>
+			<div style="background-color: #e9c3c5; border-radius: 5px; color:white; width: 50px">
+				Pearl 
+			</div> 
+			<div style="background-color: #b8b7b2; border-radius: 5px; color: white; width: 100px">
+				& Platinum
+			</div>
+		</dt> 
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #a4cddf">
+			It went ashore after evolving. Its entire body is clad in a sturdy armor.
+		</dd>
+		<br>
+		<dt>
+			<div style="background-color: #e7bd42; border-radius: 5px; color:white; width: 100px">
+				Heart Gold 
+			</div>
+			<div style="background-color: #b5b5bd; border-radius: 5px; color:white; width: 120px">
+				& Soul Silver
+			</div>
+		</dt> 
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #e7bd42">
+			Its enormous, retractable claws can cut through most anything. Its entire body is clad in sturdy plates.
+		</dd>
+	</dl>
+</div>
+<br>
+<div style="background-color: #cbecb5; border-radius: 15px; border: 2px solid #9cdb73">
+	<h3>Generation V </h3>
+	<dl>
+		<dt>
+			<div style="background-color: white; border-radius: 5px; color:black;width: 50px">
+				Black 
+			</div>
+			<div style="background-color: black; border-radius: 5px; color:white;width: 70px">
+				& White
+			</div>
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid black">
+			It went ashore after evolving. Its entire body is clad in a sturdy armor.
+		</dd>
+		<br>
+		<dt>
+			<div style="background-color: white; border-radius: 5px; color:black;width: 70px">
+				Black 2 
+			</div>
+			<div style="background-color: black; border-radius: 5px; color:white;width: 90px">
+				& White 2
+			</div>
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid black">
+			It went ashore after evolving. Its entire body is clad in a sturdy armor.
+		</dd>
+	</dl>
+</div>
+<br>
+<div style="background-color: #cbecb5; border-radius: 15px; border: 2px solid #9cdb73">
+	<h3>Generation VI </h3>
+	<dl>
+		<dt style="background-color: #0e4bef; border-radius: 5px; color:white; width: 30px; padding-left: 10px">
+			X
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #0e4bef">
+			Its enormous, retractable claws can cut through most anything. Its entire body is clad in sturdy plates.
+		</dd>
+<br>
+		<dt style="background-color: #e71837; border-radius: 5px; color:white; width: 30px; padding-left: 10px">
+			Y
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #e71837">
+			Protected by a hard shell, its body is very sturdy. It skewers prey with its claws to feed.
+		</dd>
+<br>
+		<dt style="background-color:#9b111e; border-radius: 5px; color:white; width: 100px; ">
+			Omega Ruby
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #9b111e">
+			Armaldo’s tough armor makes all attacks bounce off. This Pokémon’s two enormous claws can be freely extended or contracted. They have the power to punch right through a steel slab.
+		</dd>
+<br>
+		<dt style="background-color: #297bc1;border-radius: 5px; color: white; width: 140px">
+			Alpha Sapphire
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #297bc1">
+			Armaldo is a Pokémon species that became extinct in prehistoric times. This Pokémon is said to have walked on its hind legs, which would have been more convenient for life on land.
+		</dd>
+	</dl>
+</div>
+<br>
+<div style="background-color: #cbecb5; border-radius: 15px; border: 2px solid #9cdb73">
+	<h3>Generation VII</h3>
+	<dl>
+		<dt style="background-color: #ffb51b; border-radius: 5px; color: white; width: 90px">
+			Ultra Sun
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #ffb51b">
+			It lived on land and went out into the sea to hunt for prey. Its sharp claws were its greatest weapon.
+		</dd>
+<br>
+		<dt style="background-color: #0a3376; border-radius: 5px; color:white; width: 100px">
+			Ultra Moon
+		</dt>
+		<dd style="background-color: white; border-radius: 5px; width: fill; border: 2px solid #0a3376">
+			Armaldo adapted from living in water to living on land. It has been determined that it is the ancestor of some bug Pokémon.
+		</dd>
+	</dl>
+</div>
+<a href="#c0">Back to top</a>
+<br>
+</div>
+<br>
+
+<div style="background-color: #ffd8ab; border-radius: 5px ; border: 3px solid #ffb056">
+	<a name="c3"><h2>Base Stats</h2></a>
+
+	<table style="width:50%; background-color: #fae7d1; border:2px solid #ffb056">
+		<tr>
+			<th>Stat</th>
+			<th>Range</th>
+		</tr>
+		<tr>
+			<td>
+				<table style="width: 100%">
+					<tr>
+						<td>_</td>
+					</tr>
+					<tr>
+						<td style="background-color: #ff1f40; font-weight: bold;">HP: 75</td>
+					</tr>
+					<tr>
+						<td style="background-color: #fdae42; font-weight: bold;">Attack: 125</td>
+					</tr>
+					<tr>
+						<td style="background-color: #ffeb7a; font-weight: bold;">Defense: 100</td>
+					</tr>
+					<tr>
+						<td style="background-color: #4b84ec; font-weight: bold;">Special Attack: 70</td>
+					</tr>
+					<tr>
+						<td style="background-color: #b7df89; font-weight: bold;">Special Defense: 80</td>
+					</tr>
+					<tr>
+						<td style="background-color: #b19cd9; font-weight: bold;">Speed: 45</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table style="width: 100%">
+					<tr>
+						<th>At lvl 50</th>
+						<th>At lvl 100</th>
+					</tr>
+					<tr>
+						<td style="background-color: #ff1f40; font-weight: bold;">135-182</td>
+						<td style="background-color: #ff1f40; font-weight: bold;">260-354</td>
+					</tr>
+					<tr>
+						<td style="background-color: #fdae42; font-weight: bold;">117-194</td>
+						<td style="background-color: #fdae42; font-weight: bold;">229-383</td>
+					</tr>
+					<tr>
+						<td style="background-color: #ffeb7a; font-weight: bold;">94-167</td>
+						<td style="background-color: #ffeb7a; font-weight: bold;">184-328</td>
+					</tr>
+					<tr>
+						<td style="background-color: #4b84ec; font-weight: bold;">67-134</td>
+						<td style="background-color: #4b84ec; font-weight: bold;">130-262</td>
+					</tr>
+					<tr>
+						<td style="background-color: #b7df89; font-weight: bold;">76-145</td>
+						<td style="background-color: #b7df89; font-weight: bold;">148-284</td>
+					</tr>
+					<tr>
+						<td style="background-color: #b19cd9; font-weight: bold;">45-106</td>
+						<td style="background-color: #b19cd9; font-weight: bold;">85-207</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+<a href="#c0">Back to top</a>
+</div>
+<br>
+<div style="background-color: #ffd8ab; border-radius: 5px ; border: 3px solid #ffb056">
+	<a name="c5"><h2>Learnset</h2></a>
+
+	<div class="tab">
+  		<button class="tablinks" onclick="switchGen(event, 'GenIII')">Generation III</button>
+  		<button class="tablinks" onclick="switchGen(event, 'GenVII')">Generation VII</button>
+	</div>
+	<div id = "GenIII" class="tabcontent">
+		<h3>By levelling up (Generation III)</h3>
+		<table style="width:50%; background-color: white">
+			<tr>
+				<th>Level</th>
+				<th>Move</th>
+				<th>Type</th>
+				<th>Power</th>
+				<th>Accuracy</th>
+				<th>PP</th>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Scratch</td>
+				<td id="tdNormal">Normal</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>35</td>
+
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Harden</td>
+				<td id="tdNormal">Normal</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>30</td>
+
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Mud Sport</td>
+				<td id="tdGround">Ground</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Water Gun</td>
+				<td id="tdWater">Water</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>25</td>
+			</tr>
+
+			<tr>
+				<td>7</td>
+				<td>Harden</td>
+				<td id="tdNormal">Normal</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>Mud Sport</td>
+				<td id="tdGround">Ground</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>19</td>
+				<td>Water Gun</td>
+				<td id ="tdWater">Water</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>25</td>
+			</tr>
+
+			<tr>
+				<td>25</td>
+				<td>Metal Claw</td>
+				<td id="tdSteel">Steel</td>
+				<td>50</td>
+				<td>95%</td>
+				<td>35</td>
+			</tr>
+
+			<tr>
+				<td>31</td>
+				<td>Protect</td>
+				<td id="tdNormal">Normal</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>10</td>
+			</tr>
+
+			<tr>
+				<td>37</td>
+				<td>Ancient Power</td>
+				<td id="tdRock">Rock</td>
+				<td>60</td>
+				<td>100%</td>
+				<td>5</td>
+			</tr>
+
+			<tr>
+				<td>46</td>
+				<td>Fury Cutter</td>
+				<td id="tdBug">Bug</td>
+				<td>10</td>
+				<td>95%</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>55</td>
+				<td>Slash</td>
+				<td id="tdNormal">Normal</td>
+				<td>70</td>
+				<td>100%</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>64</td>
+				<td>Rock Blast</td>
+				<td id="tdRock">Rock</td>
+				<td>25</td>
+				<td>80%</td>
+				<td>10</td>
+			</tr>
+		</table>
+	</div>
+	<div id = "GenVII" class="tabcontent">
+		<h3>By levelling up (Generation VII)</h3>
+		<table style="width:50%;background-color: white">
+			<tr>
+				<th>Level</th>
+				<th>Move</th>
+				<th>Type</th>
+				<th>Category</th>
+				<th>Power</th>
+				<th>Accuracy</th>
+				<th>PP</th>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Harden</td>
+				<td id="tdNormal">Normal</td>
+				<td>Status</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>30</td>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Mud Sport</td>
+				<td id="tdGround">Ground</td>
+				<td>Status</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Scratch</td>
+				<td id="tdNormal">Normal</td>
+				<td>Physical</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>35</td>
+			</tr>
+
+			<tr>
+				<td>1</td>
+				<td>Water Gun</td>
+				<td id="tdWater">Water</td>
+				<td>Special</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>25</td>
+			</tr>
+
+			<tr>
+				<td>4</td>
+				<td>Mud Sport</td>
+				<td id="tdGround">Ground</td>
+				<td>Status</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>7</td>
+				<td>Water Gun</td>
+				<td id = "tdWater">Water</td>
+				<td>Special</td>
+				<td>40</td>
+				<td>100%</td>
+				<td>25</td>
+			</tr>
+
+			<tr>
+				<td>10</td>
+				<td>Fury Cutter</td>
+				<td id="tdBug">Bug</td>
+				<td>Physical</td>
+				<td>40</td>
+				<td>95%</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>13</td>
+				<td>Smack Down</td>
+				<td id="tdRock">Rock</td>
+				<td>Physical</td>
+				<td>50</td>
+				<td>100%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>17</td>
+				<td>Metal Claw</td>
+				<td id="tdSteel">Steel</td>
+				<td>Physical</td>
+				<td>50</td>
+				<td>95%</td>
+				<td>35</td>
+			</tr>
+
+			<tr>
+				<td>21</td>
+				<td>Ancient Power</td>
+				<td id="tdRock">Rock</td>
+				<td>Special</td>
+				<td>60</td>
+				<td>100%</td>
+				<td>5</td>
+			</tr>
+
+			<tr>
+				<td>25</td>
+				<td>Bug Bite</td>
+				<td id="tdBug">Bug</td>
+				<td>Physical</td>
+				<td>60</td>
+				<td>100%</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>29</td>
+				<td>Brine</td>
+				<td id="tdWater">Water</td>
+				<td>Special</td>
+				<td>65</td>
+				<td>100%</td>
+				<td>10</td>
+			</tr>
+
+			<tr>
+				<td>34</td>
+				<td>Slash</td>
+				<td id="tdNormal">Normal</td>
+				<td>Physical</td>
+				<td>70</td>
+				<td>100%</td>
+				<td>20</td>
+			</tr>
+
+			<tr>
+				<td>39</td>
+				<td>Crush Claw</td>
+				<td id="tdNormal">Normal</td>
+				<td>Physical</td>
+				<td>75</td>
+				<td>95%</td>
+				<td>10</td>
+			</tr>
+
+			<tr>
+				<td>46</td>
+				<td>X-Scissor</td>
+				<td id="tdBug">Bug</td>
+				<td>Physical</td>
+				<td>80</td>
+				<td>100%</td>
+				<td>15</td>
+			</tr>
+
+			<tr>
+				<td>53</td>
+				<td>Protect</td>
+				<td id="tdNormal">Normal</td>
+				<td>Status</td>
+				<td>-</td>
+				<td>-%</td>
+				<td>10</td>
+			</tr>
+
+			<tr>
+				<td>61</td>
+				<td>Rock Blast</td>
+				<td id="tdRock">Rock</td>
+				<td>Physical</td>
+				<td>25</td>
+				<td>80%</td>
+				<td>10</td>
+			</tr>
+		</table>
+	</div>
+	<h3>By TH/HM</h3>
+	<table style="width:50%; background-color: white">
+		<tr>
+			<th>TM/HM</th>
+			<th>Move</th>
+			<th>Type</th>
+			<th>Power</th>
+			<th>Accuracy</th>
+			<th>PP</th>
+		</tr>
+
+		<tr>
+			<td>TM03</td>
+			<td>Water Pulse</td>
+			<td id="tdWater">Water</td>
+			<td>60</td>
+			<td>100%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM06</td>
+			<td>Toxic</td>
+			<td id="tdPoison">Poison</td>
+			<td>-</td>
+			<td>85%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM10</td>
+			<td>Hidden Power</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>100%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>TM11</td>
+			<td>Sunny Day</td>
+			<td id="tdFire">Fire</td>
+			<td>-</td>
+			<td>-%</td>
+			<td>5</td>
+		</tr>
+
+		<tr>
+			<td>TM15</td>
+			<td>Hyper Beam</td>
+			<td id="tdNormal">Normal</td>
+			<td>150</td>
+			<td>90%</td>
+			<td>5</td>
+		</tr>
+
+		<tr>
+			<td>TM17</td>
+			<td>Protect</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>-%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM21</td>
+			<td>Frustration</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>100%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM23</td>
+			<td>Iron Tail</td>
+			<td id="tdSteel">Steel</td>
+			<td>100</td>
+			<td>75%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>TM26</td>
+			<td>Earthquake</td>
+			<td id="tdGround">Ground</td>
+			<td>100</td>
+			<td>100%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM27</td>
+			<td>Return</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>100%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM28</td>
+			<td>Dig</td>
+			<td id="tdGround">Ground</td>
+			<td>60</td>
+			<td>100%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM31</td>
+			<td>Brick Break</td>
+			<td id="tdFight">Fight</td>
+			<td>75</td>
+			<td>100%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>TM32</td>
+			<td>Double Team</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>-%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>TM37</td>
+			<td>Sandstorm</td>
+			<td id="tdRock">Rock</td>
+			<td>-</td>
+			<td>-%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM39</td>
+			<td>Rock Tomb</td>
+			<td id="tdRock">Rock</td>
+			<td>50</td>
+			<td>80%</td>
+			<td>10</td>
+		</tr>
+
+		<tr>
+			<td>TM40</td>
+			<td>Aerial Ace</td>
+			<td id="tdFlying">Flying</td>
+			<td>60</td>
+			<td>-%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM42</td>
+			<td>Facade</td>
+			<td id="tdNormal">Normal</td>
+			<td>70</td>
+			<td>100%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM43</td>
+			<td>Secret Power</td>
+			<td id="tdNormal">Normal</td>
+			<td>70</td>
+			<td>100%</td>
+			<td>20</td>
+		</tr>
+
+		<tr>
+			<td>TM44</td>
+			<td>Rest</td>
+			<td id="tdPsychic">Psychic</td>
+			<td>-</td>
+			<td>-%</td>
+			<td>10</td>
+		</tr>
+
+
+		<tr>
+			<td>TM45</td>
+			<td>Attract</td>
+			<td id="tdNormal">Normal</td>
+			<td>-</td>
+			<td>100%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>HM01</td>
+			<td>Cut</td>
+			<td id="tdNormal">Normal</td>
+			<td>50</td>
+			<td>95%</td>
+			<td>30</td>
+		</tr>
+
+		<tr>
+			<td>HM04</td>
+			<td>Strength</td>
+			<td id="tdNormal">Normal</td>
+			<td>80</td>
+			<td>100%</td>
+			<td>15</td>
+		</tr>
+
+		<tr>
+			<td>HM06</td>
+			<td>Rock Smash</td>
+			<td id="tdFight">Fight</td>
+			<td>20</td>
+			<td>100%</td>
+			<td>15</td>
+		</tr>
+	</table>
+		<a href="#c0">Back to top</a>
+
+</div>
+
+</body>
+</html>

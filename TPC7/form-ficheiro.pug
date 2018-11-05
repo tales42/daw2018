@@ -1,0 +1,30 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Upload de um Ficheiro
+            .w3-container
+                form.w3-container(action='/processaForm' method='POST' enctype='multipart/form-data')
+                    label.w3-teal 
+                        b Ficheiro
+                    input.w3-input.w3-border.w3-light-grey(type='file' name='ficheiro' required)
+                    label.w3-teal 
+                        b Descrição
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='desc' required)
+                    input.w3-btn.w3-blue-grey(id='refresh' type='submit' value='Enviar')
+            footer.w3-container.w3-teal 
+                address Gerado por FormApp
+
+    .w3-container
+        .w3-card-4  
+            header.w3-container.w3-teal
+                h3 Lista de Ficheiros
+            .w3-container
+                ul
+                    each ficheiro in struct
+                        li
+                            a(href='/getFile?id='+ficheiro.id)=ficheiro.desc
+    br
+    address 
+        a(href="/") Voltar à página principal 
